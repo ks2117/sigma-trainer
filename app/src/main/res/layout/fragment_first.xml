@@ -15,12 +15,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow>
+        <TableRow android:background="@drawable/activity_main_card_header" android:layout_height="64dp">
             <TextView
                 android:layout_column="1"
                 android:text="Open..."
-                android:textAlignment="center"
-                android:background="@drawable/activity_main_card_header" />
+                android:textAlignment="center"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:paddingTop="16dp"
+                android:paddingEnd="16dp"
+                android:alpha="1"
+                app:srcCompat="@drawable/graph_icon"
+                android:scaleX=".1"
+                android:scaleY=".1"/>
         </TableRow>
 
         <TableRow android:layout_marginBottom="5dp">
