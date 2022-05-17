@@ -6,84 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".FirstFragment">
 
-<!--    <TextView-->
-<!--        android:id="@+id/textview_first"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/hello_first_fragment"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/button_first"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/button_first"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="@string/next"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/textview_first" />-->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:stretchColumns="1">
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TableRow>
             <TextView
                 android:layout_column="1"
                 android:text="Open..."
-                android:background="@drawable/activity_main_card"
-                android:layout_height="500dp"
-                android:padding="3dip" />
+                android:textAlignment="center"
+                android:background="@drawable/activity_main_card_header" />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:layout_marginBottom="5dp">
             <TextView
                 android:layout_column="1"
                 android:text="Save..."
-                android:background="@drawable/activity_main_card"
-                android:padding="3dip" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="Save As..."
-                android:background="@drawable/activity_main_card"
-                android:padding="3dip" />
-        </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
-
-        <TableRow>
-            <TextView
-                android:text="X"
-                android:background="@drawable/activity_main_card"
-                android:padding="3dip" />
-        </TableRow>
-
-        <TableRow>
-            <TextView
-                android:text="X"
-                android:background="@drawable/activity_main_card"
-                android:padding="3dip" />
-        </TableRow>
-
-        <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
-
-        <TableRow>
-            <TextView
-                android:layout_column="1"
-                android:text="Quit"
-                android:background="@drawable/activity_main_card"
+                android:textAlignment="center"
+                android:background="@drawable/activity_main_card_body"
                 android:padding="3dip" />
         </TableRow>
     </TableLayout>
