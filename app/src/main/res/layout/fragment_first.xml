@@ -16,29 +16,37 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow android:background="@drawable/activity_main_card_header" android:layout_height="64dp">
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
                 android:layout_column="1"
                 android:text="Open..."
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="500dp"
                 android:layout_height="500dp"
-                android:paddingTop="16dp"
-                android:paddingEnd="16dp"
-                android:alpha="1"
+                android:scaleX="0.032"
+                android:scaleY="0.032"
+                android:layout_marginLeft="-284dp"
+                android:layout_marginRight="-218dp"
+                android:layout_marginTop="-234dp"
+                android:layout_marginBottom="-234dp"
                 app:srcCompat="@drawable/graph_icon"
-                android:scaleX=".1"
-                android:scaleY=".1"/>
+                tools:ignore="RtlHardcoded"
+                android:clickable="true"
+                android:focusable="true" />
         </TableRow>
 
         <TableRow android:layout_marginBottom="5dp">
+
             <TextView
+                android:layout_width="match_parent"
                 android:layout_column="1"
-                android:text="Save..."
-                android:textAlignment="center"
                 android:background="@drawable/activity_main_card_body"
-                android:padding="3dip" />
+                android:text="Save..."
+                android:textAlignment="center"/>
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
