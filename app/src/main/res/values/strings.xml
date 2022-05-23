@@ -9,4 +9,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="am_workout_text">AM Workout</string>
+    <string name="m_workout_text">M Workout</string>
+    <string name="pm_workout_text">PM Workout</string>
 </resources>

@@ -9,7 +9,6 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:stretchColumns="1"
         app:layout_constraintBottom_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,38 +16,128 @@
         android:layout_marginHorizontal="8dp"
         android:layout_marginVertical="8dp">
 
-        <TableRow android:background="@drawable/activity_main_card_header" android:layout_height="64dp">
 
-            <TextView
-                android:layout_width="match_parent"
+            <RelativeLayout
+                android:background="@drawable/activity_main_card_header"
+                android:layout_width="wrap_content"
                 android:layout_height="32dp"
-                android:layout_column="1"
-                android:text="Open..."
-                android:textAlignment="center" />
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="500dp"
-                android:layout_height="500dp"
-                android:scaleX="0.032"
-                android:scaleY="0.032"
-                android:layout_marginLeft="-284dp"
-                android:layout_marginRight="-218dp"
-                android:layout_marginTop="-234dp"
-                android:layout_marginBottom="-234dp"
-                app:srcCompat="@drawable/graph_icon"
-                tools:ignore="RtlHardcoded"
-                android:clickable="true"
-                android:focusable="true" />
-        </TableRow>
+                tools:ignore="UselessParent">
 
-        <TableRow android:layout_marginBottom="5dp">
+                <ImageView
+                    android:id="@+id/am_workout_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_baseline_fitness_center_24" />
+
+                <TextView
+                    android:id="@+id/am_workout_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/am_workout_chart_icon"
+                    android:layout_toEndOf="@id/am_workout_icon"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/am_workout_text" />
+
+                <ImageView
+                    android:id="@+id/am_workout_chart_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_baseline_insert_chart_outlined_24" />
+
+            </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/activity_main_card_body"
+            android:textAlignment="center" />
+        <RelativeLayout
+            android:background="@drawable/activity_main_card_header"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/m_workout_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_fitness_center_24" />
 
             <TextView
+                android:id="@+id/m_workout_text"
                 android:layout_width="match_parent"
-                android:layout_column="1"
-                android:background="@drawable/activity_main_card_body"
-                android:text="Save..."
-                android:textAlignment="center"/>
-        </TableRow>
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@id/m_workout_chart_icon"
+                android:layout_toEndOf="@id/m_workout_icon"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/m_workout_text" />
+
+            <ImageView
+                android:id="@+id/m_workout_chart_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_insert_chart_outlined_24" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/activity_main_card_body"
+            android:textAlignment="center" />
+        <RelativeLayout
+            android:background="@drawable/activity_main_card_header"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/pm_workout_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_fitness_center_24" />
+
+            <TextView
+                android:id="@+id/pm_workout_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@id/pm_workout_chart_icon"
+                android:layout_toEndOf="@id/pm_workout_icon"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/pm_workout_text" />
+
+            <ImageView
+                android:id="@+id/pm_workout_chart_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_insert_chart_outlined_24" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:background="@drawable/activity_main_card_body"
+            android:textAlignment="center" />
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
